@@ -1,0 +1,16 @@
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %clr(%5p) %clr([%15.15t]){cyan} %clr(%X{__traceId}){magenta} %clr(%-40.40logger{39}){blue} %clr(:) %m%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] %X{__traceId} %-40.40logger{39} : %m%n"
+  level:
+    com.ansun: debug   #设置mapper.java包为debug输出
+  file.max-history: 30
+
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+
+
+spring:
+  redis:
+    host: 127.0.0.1
