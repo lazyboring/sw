@@ -2,6 +2,7 @@ package com.nc.mrbs.rpc.mapper;
 
 import com.nc.mrbs.rpc.entity.CmsSubject;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author niec
  * @since 2020-04-26
  */
+
 public interface CmsSubjectMapper extends BaseMapper<CmsSubject> {
 
 }

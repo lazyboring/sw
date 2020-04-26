@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CmsSubjectService extends IService<CmsSubject> {
 
+    CmsSubject selectCmsSubjectById(Long id);
 }

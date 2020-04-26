@@ -4,6 +4,7 @@ import com.nc.mrbs.rpc.entity.CmsSubject;
 import com.nc.mrbs.rpc.mapper.CmsSubjectMapper;
 import com.nc.mrbs.rpc.service.CmsSubjectService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,4 +18,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class CmsSubjectServiceImpl extends ServiceImpl<CmsSubjectMapper, CmsSubject> implements CmsSubjectService {
 
+    @Autowired
+    private CmsSubjectMapper cmsSubjectMapper;
+
+    @Override
+    public CmsSubject selectCmsSubjectById(Long id) {
+        return cmsSubjectMapper.selectById(id);
+    }
 }
