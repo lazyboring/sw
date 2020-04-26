@@ -1,0 +1,101 @@
+spring:
+  application:
+    name: nc-mrbs-rpc-service
+#  activiti:
+#    check-process-definitions: true
+#    database-schema-update: true
+#    process-definition-location-prefix: classpath:/processes/
+#    db-history-used: true
+
+  profiles:
+    active: dev
+  redis:
+    port: 6379
+    jedis:
+      pool:
+        max-active: 500
+        max-wait: 60s
+        max-idle: 100
+        min-idle: 50
+    timeout: 3s
+
+  datasource:
+    druid:
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        #login-username: admin
+        #login-password: admin
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: false
+        wall:
+          config:
+            multi-statement-allow: true
+      filters: config
+#      connection-properties: config.decrypt=true
+server:
+  port: 3100
+# log
+logging:
+  file: nc-mrbs-rpc-service.log
+
+# dubbo
+dubbo:
+  application:
+    id: ${spring.application.name}
+    name: ${spring.application.name}
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 21811
+    threads: 1000
+    status: server
+  scan:
+    basePackages: com.nc.mrbs.rpc.service.impl
+  provider:
+    retries: 0
+    timeout: 60000
+  consumer:
+    retries: 0
+    timeout: 60000
+    check: false
+
+
+# mybatis-plus
+mybatis-plus:
+  type-aliases-package: com.nc.mrbs.rpc.entity
+  mapper-locations: classpath:mapping/*Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: uuid
+      field-strategy: not_null
+    worker-id: 1
+    datacenter-id: 18
+  configuration:
+    map-underscore-to-camel-case: true
+
+service:
+  version:
+    mrbs: 1.0.0
+
+
+
+
+
+
