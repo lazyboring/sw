@@ -64,7 +64,7 @@ public class MrbsCodeGenerator {
     /**
      * 文件地址
      */
-    private static final String FILE_PATH = new File("D:/tq/nc-sw").getAbsolutePath();
+    private static final String FILE_PATH = new File("D:/tq/sw/nc-sw").getAbsolutePath();
     /**
      * 项目路径
      */

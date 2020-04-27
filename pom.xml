@@ -118,8 +118,6 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.47</version>
-
-
             </dependency>
 
             <!--阿里巴巴连接池-->
