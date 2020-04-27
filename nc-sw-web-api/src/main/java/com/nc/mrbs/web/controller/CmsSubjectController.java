@@ -5,10 +5,10 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.nc.mrbs.ResultJson;
 import com.nc.mrbs.rpc.service.CmsSubjectService;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.*;
+
 
 /**
  * <p>
@@ -18,8 +18,8 @@ import org.springframework.stereotype.Controller;
  * @author niec
  * @since 2020-04-26
  */
-@Controller
-@RequestMapping("/nc.mrbs/cmsSubject")
+@RestController
+@RequestMapping("/cmsSubject")
 public class CmsSubjectController {
 
     @Reference(version = "${service.version.mrbs}")
