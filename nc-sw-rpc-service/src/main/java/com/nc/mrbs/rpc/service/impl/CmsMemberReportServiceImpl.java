@@ -1,10 +1,11 @@
 package com.nc.mrbs.rpc.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.nc.mrbs.rpc.entity.CmsMemberReport;
 import com.nc.mrbs.rpc.mapper.CmsMemberReportMapper;
 import com.nc.mrbs.rpc.service.CmsMemberReportService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+
 
 /**
  * <p>

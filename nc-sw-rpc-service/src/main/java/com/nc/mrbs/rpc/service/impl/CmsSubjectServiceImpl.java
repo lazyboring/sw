@@ -1,11 +1,12 @@
 package com.nc.mrbs.rpc.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.nc.mrbs.rpc.entity.CmsSubject;
 import com.nc.mrbs.rpc.mapper.CmsSubjectMapper;
 import com.nc.mrbs.rpc.service.CmsSubjectService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 /**
  * <p>

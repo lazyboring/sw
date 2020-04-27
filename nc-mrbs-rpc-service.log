@@ -174,3 +174,349 @@ Caused by: java.lang.ClassNotFoundException: com.alibaba.druid.filter.logging.Lo
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 25 common frames omitted
+2020-04-27 16:19:57.646  INFO [main]  c.a.dubbo.common.logger.LoggerFactory    : using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2020-04-27 16:19:57.655  INFO [main]  a.b.d.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.6) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+2020-04-27 16:19:57.657  INFO [main]  e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.id=${spring.application.name}, dubbo.application.name=${spring.application.name}, dubbo.consumer.check=false, dubbo.consumer.retries=0, dubbo.consumer.timeout=60000, dubbo.protocol.id=dubbo, dubbo.protocol.name=dubbo, dubbo.protocol.port=21811, dubbo.protocol.status=server, dubbo.protocol.threads=1000, dubbo.provider.retries=0, dubbo.provider.timeout=60000, dubbo.registry.address=zookeeper://127.0.0.1:2181, dubbo.scan.basePackages=com.nc.mrbs.rpc.service.impl}
+2020-04-27 16:19:57.710  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : Starting MrbsRpcServiceApplication on MICRO-002251042 with PID 18552 (D:\tq\sw\nc-sw\nc-sw-rpc-service\target\classes started by Administrator in D:\tq\sw\nc-sw)
+2020-04-27 16:19:57.710  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : The following profiles are active: dev
+2020-04-27 16:19:58.168  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-27 16:19:58.169  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-27 16:19:58.192  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2020-04-27 16:19:58.247  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : nc-mrbs-rpc-service, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+2020-04-27 16:19:58.248  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : nc-mrbs-rpc-service] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : dubbo, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : dubbo] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ProviderConfig#0, class : com.alibaba.dubbo.config.ProviderConfig] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProviderConfig#0] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ConsumerConfig#0, class : com.alibaba.dubbo.config.ConsumerConfig] has been registered.
+2020-04-27 16:19:58.249  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] has been registered.
+2020-04-27 16:19:58.261  INFO [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:19:58.261  INFO [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:19:58.264  WARN [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.nc.mrbs.rpc.service.impl], dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:19:58.265  INFO [main]  o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-04-27 16:19:58.423  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa837966] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:19:58.460  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:19:58.463  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:19:58.464  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:19:58.465  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:19:58.466  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:19:58.682  INFO [main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3100 (http)
+2020-04-27 16:19:58.699  INFO [main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-27 16:19:58.699  INFO [main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-04-27 16:19:58.782  INFO [main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-27 16:19:58.782  INFO [main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1041 ms
+2020-04-27 16:19:58.972  INFO [main]  c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-27 16:19:59.182  INFO [main]  com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-27 16:19:59.798  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:19:59.915  WARN [main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2020-04-27 16:19:59.916  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:19:59.918  INFO [main]  com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-04-27 16:19:59.918  INFO [main]  f.a.ReferenceAnnotationBeanPostProcessor : class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2020-04-27 16:19:59.920  INFO [main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-27 16:19:59.927  INFO [main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-27 16:19:59.934 ERROR [main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:265)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.nc.mrbs.rpc.MrbsRpcServiceApplication.main(MrbsRpcServiceApplication.java:17)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:507)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:404)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:389)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:248)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/alibaba/druid/filter/logging/Log4j2Filter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:489)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.alibaba.druid.filter.logging.Log4j2Filter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+2020-04-27 16:25:26.226  INFO [main]  a.b.d.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.6) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+2020-04-27 16:25:26.230  INFO [main]  e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.id=${spring.application.name}, dubbo.application.name=${spring.application.name}, dubbo.consumer.check=false, dubbo.consumer.retries=0, dubbo.consumer.timeout=60000, dubbo.protocol.id=dubbo, dubbo.protocol.name=dubbo, dubbo.protocol.port=21811, dubbo.protocol.status=server, dubbo.protocol.threads=1000, dubbo.provider.retries=0, dubbo.provider.timeout=60000, dubbo.registry.address=zookeeper://127.0.0.1:2181, dubbo.scan.basePackages=com.nc.mrbs.rpc.service.impl}
+2020-04-27 16:25:26.285  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : Starting MrbsRpcServiceApplication on MICRO-002251042 with PID 19980 (D:\tq\sw\nc-sw\nc-sw-rpc-service\target\classes started by Administrator in D:\tq\sw\nc-sw)
+2020-04-27 16:25:26.285  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : The following profiles are active: dev
+2020-04-27 16:25:26.769  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-27 16:25:26.771  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-27 16:25:26.795  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2020-04-27 16:25:26.852  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : nc-mrbs-rpc-service, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+2020-04-27 16:25:26.852  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : nc-mrbs-rpc-service] has been registered.
+2020-04-27 16:25:26.853  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+2020-04-27 16:25:26.853  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+2020-04-27 16:25:26.853  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : dubbo, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+2020-04-27 16:25:26.853  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : dubbo] has been registered.
+2020-04-27 16:25:26.853  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ProviderConfig#0, class : com.alibaba.dubbo.config.ProviderConfig] has been registered.
+2020-04-27 16:25:26.854  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProviderConfig#0] has been registered.
+2020-04-27 16:25:26.854  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ConsumerConfig#0, class : com.alibaba.dubbo.config.ConsumerConfig] has been registered.
+2020-04-27 16:25:26.854  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] has been registered.
+2020-04-27 16:25:26.869  INFO [main]  o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-04-27 16:25:27.025  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e5ff379] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:25:27.062  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:25:27.066  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:25:27.067  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:25:27.068  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:25:27.069  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:25:27.285  INFO [main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3100 (http)
+2020-04-27 16:25:27.302  INFO [main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-27 16:25:27.302  INFO [main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-04-27 16:25:27.384  INFO [main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-27 16:25:27.384  INFO [main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1070 ms
+2020-04-27 16:25:27.578  INFO [main]  c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-27 16:25:28.385  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:25:28.493  WARN [main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2020-04-27 16:25:28.494  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:25:28.496  INFO [main]  f.a.ReferenceAnnotationBeanPostProcessor : class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2020-04-27 16:25:28.498  INFO [main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-27 16:25:28.504  INFO [main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-27 16:25:28.512 ERROR [main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:265)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.nc.mrbs.rpc.MrbsRpcServiceApplication.main(MrbsRpcServiceApplication.java:17)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:507)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:404)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:389)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:248)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/alibaba/druid/filter/logging/Log4j2Filter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:489)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.alibaba.druid.filter.logging.Log4j2Filter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+2020-04-27 16:26:34.605  INFO [main]  c.a.dubbo.common.logger.LoggerFactory    : using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-04-27 16:26:34.608  INFO [main]  a.b.d.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.6) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+2020-04-27 16:26:34.611  INFO [main]  e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.id=${spring.application.name}, dubbo.application.name=${spring.application.name}, dubbo.consumer.check=false, dubbo.consumer.retries=0, dubbo.consumer.timeout=60000, dubbo.protocol.id=dubbo, dubbo.protocol.name=dubbo, dubbo.protocol.port=21811, dubbo.protocol.status=server, dubbo.protocol.threads=1000, dubbo.provider.retries=0, dubbo.provider.timeout=60000, dubbo.registry.address=zookeeper://127.0.0.1:2181, dubbo.scan.basePackages=com.nc.mrbs.rpc.service.impl}
+2020-04-27 16:26:34.664  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : Starting MrbsRpcServiceApplication on MICRO-002251042 with PID 16576 (D:\tq\sw\nc-sw\nc-sw-rpc-service\target\classes started by Administrator in D:\tq\sw\nc-sw)
+2020-04-27 16:26:34.664  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : The following profiles are active: dev
+2020-04-27 16:26:35.144  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-27 16:26:35.145  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-27 16:26:35.170  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2020-04-27 16:26:35.226  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : nc-mrbs-rpc-service, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+2020-04-27 16:26:35.227  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : nc-mrbs-rpc-service] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : dubbo, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : dubbo] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ProviderConfig#0, class : com.alibaba.dubbo.config.ProviderConfig] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProviderConfig#0] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ConsumerConfig#0, class : com.alibaba.dubbo.config.ConsumerConfig] has been registered.
+2020-04-27 16:26:35.228  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] has been registered.
+2020-04-27 16:26:35.240  INFO [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:26:35.241  INFO [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:26:35.244  WARN [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.nc.mrbs.rpc.service.impl], dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:26:35.244  INFO [main]  o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-04-27 16:26:35.406  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$997317fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:26:35.445  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:26:35.448  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:26:35.450  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:26:35.451  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:26:35.452  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:26:35.677  INFO [main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3100 (http)
+2020-04-27 16:26:35.694  INFO [main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-27 16:26:35.695  INFO [main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-04-27 16:26:35.777  INFO [main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-27 16:26:35.778  INFO [main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1082 ms
+2020-04-27 16:26:35.965  INFO [main]  c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-27 16:26:36.181  INFO [main]  com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-27 16:26:36.747  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:26:36.855  WARN [main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2020-04-27 16:26:36.855  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:26:36.857  INFO [main]  com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-04-27 16:26:36.857  INFO [main]  f.a.ReferenceAnnotationBeanPostProcessor : class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2020-04-27 16:26:36.858  INFO [main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-27 16:26:36.864  INFO [main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-27 16:26:36.872 ERROR [main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:265)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.nc.mrbs.rpc.MrbsRpcServiceApplication.main(MrbsRpcServiceApplication.java:17)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:507)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:404)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:389)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:248)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/alibaba/druid/filter/logging/Log4j2Filter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:489)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.alibaba.druid.filter.logging.Log4j2Filter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+2020-04-27 16:31:24.244  INFO [main]  c.a.dubbo.common.logger.LoggerFactory    : using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-04-27 16:31:24.247  INFO [main]  a.b.d.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.6) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+2020-04-27 16:31:24.250  INFO [main]  e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.id=${spring.application.name}, dubbo.application.name=${spring.application.name}, dubbo.consumer.check=false, dubbo.consumer.retries=0, dubbo.consumer.timeout=60000, dubbo.protocol.id=dubbo, dubbo.protocol.name=dubbo, dubbo.protocol.port=21811, dubbo.protocol.status=server, dubbo.protocol.threads=1000, dubbo.provider.retries=0, dubbo.provider.timeout=60000, dubbo.registry.address=zookeeper://127.0.0.1:2181, dubbo.scan.basePackages=com.nc.mrbs.rpc.service.impl}
+2020-04-27 16:31:24.304  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : Starting MrbsRpcServiceApplication on MICRO-002251042 with PID 19264 (D:\tq\sw\nc-sw\nc-sw-rpc-service\target\classes started by Administrator in D:\tq\sw\nc-sw)
+2020-04-27 16:31:24.304  INFO [main]  c.nc.mrbs.rpc.MrbsRpcServiceApplication  : The following profiles are active: dev
+2020-04-27 16:31:24.780  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-27 16:31:24.782  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-27 16:31:24.809  INFO [main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2020-04-27 16:31:24.870  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : nc-mrbs-rpc-service, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+2020-04-27 16:31:24.871  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : nc-mrbs-rpc-service] has been registered.
+2020-04-27 16:31:24.872  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+2020-04-27 16:31:24.872  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+2020-04-27 16:31:24.872  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : dubbo, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+2020-04-27 16:31:24.872  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : dubbo] has been registered.
+2020-04-27 16:31:24.872  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ProviderConfig#0, class : com.alibaba.dubbo.config.ProviderConfig] has been registered.
+2020-04-27 16:31:24.872  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProviderConfig#0] has been registered.
+2020-04-27 16:31:24.873  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ConsumerConfig#0, class : com.alibaba.dubbo.config.ConsumerConfig] has been registered.
+2020-04-27 16:31:24.873  INFO [main]  .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] has been registered.
+2020-04-27 16:31:24.886  INFO [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:31:24.886  INFO [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:31:24.889  WARN [main]  b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.nc.mrbs.rpc.service.impl], dubbo version: 2.6.6, current host: 10.0.100.123
+2020-04-27 16:31:24.890  INFO [main]  o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-04-27 16:31:25.066  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4edea684] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:31:25.105  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:31:25.109  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:31:25.110  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:31:25.111  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:31:25.113  INFO [main]  trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-27 16:31:25.351  INFO [main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3100 (http)
+2020-04-27 16:31:25.371  INFO [main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-27 16:31:25.371  INFO [main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-04-27 16:31:25.455  INFO [main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-27 16:31:25.456  INFO [main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1121 ms
+2020-04-27 16:31:25.650  INFO [main]  c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-27 16:31:25.854  INFO [main]  com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-27 16:31:26.437  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:31:26.548  WARN [main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2020-04-27 16:31:26.548  INFO [main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-27 16:31:26.550  INFO [main]  com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-04-27 16:31:26.551  INFO [main]  f.a.ReferenceAnnotationBeanPostProcessor : class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2020-04-27 16:31:26.552  INFO [main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-27 16:31:26.559  INFO [main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-27 16:31:26.566 ERROR [main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:265)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at com.nc.mrbs.rpc.MrbsRpcServiceApplication.main(MrbsRpcServiceApplication.java:17)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:507)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:404)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:389)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:248)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/alibaba/druid/filter/logging/Log4j2Filter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:489)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.alibaba.druid.filter.logging.Log4j2Filter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
