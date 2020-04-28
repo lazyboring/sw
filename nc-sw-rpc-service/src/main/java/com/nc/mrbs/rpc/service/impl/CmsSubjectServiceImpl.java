@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author niec
  * @since 2020-04-26
  */
-@Service
+@Service(version = "${service.version.mrbs}")
 public class CmsSubjectServiceImpl extends ServiceImpl<CmsSubjectMapper, CmsSubject> implements CmsSubjectService {
 
     @Autowired
