@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
  * @since 2020-04-26
  */
 @Controller
-@RequestMapping("/nc.mrbs/cmsSubjectComment")
+@RequestMapping("/cmsSubjectComment")
 public class CmsSubjectCommentController {
 
 }

@@ -31,23 +31,23 @@ server:
 
 # log
 logging:
-  file: as-mrbs-web-api.log
+  file: nc-mrbs-web-api.log
 
 # 跨域配置
 cros:
   allowedOrigins: '*'
 
-# jwt
-jwt:
-  header: Authorization
-  check_index: 352
-  check_code: checkCode
-  secret: secret_store_ansun_api_2019
-  expiration: 604800 #604800=7天
-  route:
-    authentication:
-      path: auth
-      refresh: refresh
+## jwt
+#jwt:
+#  header: Authorization
+#  check_index: 352
+#  check_code: checkCode
+#  secret: secret_store_ansun_api_2019
+#  expiration: 604800 #604800=7天
+#  route:
+#    authentication:
+#      path: auth
+#      refresh: refresh
 
 # dubbo
 dubbo:

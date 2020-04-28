@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
  * @since 2020-04-28
  */
 @Controller
-@RequestMapping("/nc.mrbs/smsCoupon")
+@RequestMapping("/smsCoupon")
 public class SmsCouponController {
 
 }

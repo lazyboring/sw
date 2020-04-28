@@ -4,6 +4,7 @@ package com.nc.mrbs.web.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.nc.mrbs.ResultJson;
 import com.nc.mrbs.rpc.service.CmsSubjectService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
  * @author niec
  * @since 2020-04-26
  */
+@Api(description = "cms")
 @RestController
 @RequestMapping("/cmsSubject")
 public class CmsSubjectController {
