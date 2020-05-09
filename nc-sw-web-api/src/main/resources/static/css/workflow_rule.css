@@ -1,0 +1,104 @@
+body{
+    margin-top: 10px;
+}
+.visible-dept-content-dev{
+    width: 128px;
+    border: 1px solid #c2c2c2;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.photo-lable{
+    line-height: 55px;
+}
+#cc_div,#approver_div,#person_in_charge_div,
+#meeting_admin_div{display: inline-flex;}
+#cc_add,#approver_add,#person_in_charge_ad,#person_in_charge_add,
+#meeting_admin_add{display: inline-block;cursor: pointer;}
+.workflow-line{
+    padding-left: 5px;
+    font-weight: 700;
+    color: #c2c2c2;
+    line-height: 70px;
+}
+.approver-content-dev,.cc-content-dev,.admin-content-dev,
+.person-in-charge-content-dev,.person-in-charge-dev{
+    position: relative;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+.person-in-charge-photo{
+    display: inline-block;
+    border-radius: 5px;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+}
+.cc-name,.approver-name,.person-in-charge-name{
+    position: absolute;
+    width: 70px;
+    bottom: 0px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.rm-img{
+    position: absolute;
+    width: 24px;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+}
+.person-in-charge-rm-img{
+    position: absolute;
+    width: 24px;
+    left: 60px;
+    top: 0px;
+    cursor: pointer;
+}
+.photo{
+    border: 1px solid #c2c2c2;
+    display: inline-block;
+    border-radius: 5px;
+    width: 64px;
+    height: 64px;
+}
+.search{
+    clear: none;
+}
+.search-img-dev{
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    float: left;
+    left: 5px;
+    margin-top: 10px;
+    height: 32px;
+    margin-left: 5px;
+    width: 30px;
+    text-align: center;
+}
+.search-img{
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.search-input{
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    width: 80%;
+}
+.search-fieldset{
+    margin-top: 50px;
+}
+.two-level-dept{
+    margin-left: 20px;
+}

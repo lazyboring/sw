@@ -32,4 +32,6 @@ public class CmsSubjectController {
     public ResultJson get(Long id){
         return ResultJson.ok(cmsSubjectService.selectCmsSubjectById(id));
     }
+
+
 }

@@ -1,0 +1,32 @@
+body{
+    margin-top: 10px;
+}
+.search{
+    clear: none;
+}
+.search-img-dev{
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    float: left;
+    left: 5px;
+    margin-top: 10px;
+    height: 32px;
+    margin-left: 5px;
+    width: 30px;
+    text-align: center;
+}
+.search-img{
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.search-input{
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    width: 80%;
+}
+.search-fieldset{
+    margin-top: 50px;
+}
