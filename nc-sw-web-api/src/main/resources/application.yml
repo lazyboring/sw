@@ -1,6 +1,20 @@
 spring:
   application:
     name: nc-mrbs-web-api
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+    ## thymeleaf模板设置
+  ## thymeleaf模板设置
+#  thymeleaf:
+#    prefix: classpath:/templates
+#    suffix: .html
+#    mode: HTML
+#    encoding: utf-8
+#    servlet.content-type: text/html
+#    cache: false
+
   profiles:
     active: dev
   servlet:
@@ -50,6 +64,14 @@ cros:
 #      refresh: refresh
 
 # dubbo
+
+# beetl 配置
+beetl:
+  suffix: html
+beetlsql:
+  enabled: false
+
+
 dubbo:
   application:
     id: ${spring.application.name}

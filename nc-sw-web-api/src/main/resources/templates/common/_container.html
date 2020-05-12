@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+@/**
+@ *      本页面所用的模板变量
+@ *
+@ * title          :  页面的标题
+@ * layoutContent  :  主页面的html内容
+@ * js             :  业务所需要的js，为数组
+@ * css            :  业务所需要的css，为数组
+@ * plugins        :  需要用到的插件，目前有["ztree"]
+@ **/
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>${title!"管理系统"}</title>
+    <link rel="stylesheet" href="${ctxPath}/layui/css/layui.css"/>
+    <link rel="stylesheet" href="${ctxPath}/modules/admin.css" media="all"/>
+
+    @/* 其他插件css */
+    @if(isNotEmpty(plugins)){
+    @if(array.contain(plugins,"ztree")){
+    <link href="${ctxPath}/ztree/zTreeStyle.css" rel="stylesheet" type="text/css"/>
+    @}
+    @if(array.contain(plugins,"summernote")){
+    @//因有样式冲突，故不引入bootstrap
+    <link href="${ctxPath}/summernote/summernote-lite.css" rel="stylesheet" type="text/css">
+    @}
+    @}
+
+    @/* 其他业务用的css */
+    @if(isNotEmpty(css)){
+    @for(item in css){
+    @if(strutil.startWith(item,"/")){
+    @item = ctxPath + item;
+    @}
+    <link href="${item}" rel="stylesheet" type="text/css" />
+    @}
+    @}
+</head>
+<body>
+
+@/* 页面加载loading */
+@ include("/common/loading.html"){}
+
+@/* 正文 */
+${layoutContent}
+
+<script type="text/javascript">
+    var ctxPath = "${ctxPath}";
+</script>
+
+@/* js和业务用的js数组 */
+<script type="text/javascript" src="${ctxPath}/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/layui/layui.js"></script>
+<script type="text/javascript" src="${ctxPath}/common.js"></script>
+@if(isNotEmpty(msg.show)){
+<input type="hidden" value="${msg.content}" id="errorMsg">
+@}
+<script type="text/javascript">
+    //错误提示信息
+    layui.use('layer', function(){
+        var errorMsg= $("#errorMsg").val();
+        if (errorMsg!=undefined && errorMsg !=""){
+            layer.open({
+                type: 1,
+                content: '<div style="padding: 20px 100px;">'+ errorMsg +'</div>'
+                ,btn: '关闭全部'
+                ,btnAlign: 'c' //按钮居中
+                ,shade: 0 //不显示遮罩
+                ,yes: function(){
+                    layer.closeAll();
+                }
+            });
+        }
+    });
+    //设置ajax
+    var $$ = layui.jquery;
+    $$.ajaxSetup({
+        complete:function (XMLHttpRequest, textStatus) {
+            if(XMLHttpRequest.getResponseHeader("sessionstatus") ==="timeout"){
+                top.location.href = "/login";
+            }
+        }
+    })
+</script>
+@/* 其他插件js */
+@if(isNotEmpty(plugins)){
+@if(array.contain(plugins,"ztree")){
+<script src="${ctxPath}/assets/common/plugins/ztree/jquery.ztree.all.min.js"></script>
+@}
+@if(array.contain(plugins,"summernote")){
+<script src="${ctxPath}/summernote/summernote-lite.js"></script>
+<script src="${ctxPath}/summernote/lang/summernote-zh-CN.js"></script>
+@}
+@}
+
+@if(isNotEmpty(js)){
+@for(item in js){
+@if(strutil.startWith(item,"/")){
+@item = ctxPath + item;
+@}
+<script src="${item}"></script>
+@}
+@}
+</body>
+</html>

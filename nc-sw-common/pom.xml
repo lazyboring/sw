@@ -25,6 +25,12 @@
             <version>2.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.ibeetl</groupId>
+            <artifactId>beetl-framework-starter</artifactId>
+            <optional>true</optional>
+        </dependency>
+
 
 
         <dependency>

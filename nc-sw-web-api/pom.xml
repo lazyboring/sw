@@ -52,9 +52,21 @@
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <groupId>com.ibeetl</groupId>
+            <artifactId>beetl-framework-starter</artifactId>
+             <version>1.2.26.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.ibeetl</groupId>
+                    <artifactId>beetlsql</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
