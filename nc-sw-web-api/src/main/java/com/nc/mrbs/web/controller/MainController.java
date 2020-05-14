@@ -15,6 +15,6 @@ public class MainController {
 
     @GetMapping("/ou")
     public String get(){
-        return "cms/cms";
+        return "cms/cms.html";
     }
 }
