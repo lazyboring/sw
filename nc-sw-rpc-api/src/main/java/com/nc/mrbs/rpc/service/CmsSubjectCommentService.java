@@ -1,5 +1,6 @@
 package com.nc.mrbs.rpc.service;
 
+import com.nc.mrbs.rpc.dto.CmsDto;
 import com.nc.mrbs.rpc.entity.CmsSubjectComment;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CmsSubjectCommentService extends IService<CmsSubjectComment> {
 
+    CmsDto addCms(CmsDto cmsDto);
+
+    CmsDto updateCms(CmsDto cmsDto);
 }
