@@ -27,7 +27,7 @@ public class MrbsCodeGenerator {
     /**
      * 代码作者
      */
-    private static final String AUTHOR = "niec";
+    private static final String AUTHOR = "niechen";
 
     /**
      * 数据库配置信息 DataSourceConfig
