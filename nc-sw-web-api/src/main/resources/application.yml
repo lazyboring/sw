@@ -45,7 +45,7 @@ server:
 
 # log
 logging:
-  file: nc-mrbs-web-api.log
+  file: D:/log/nc-mrbs-web-api.log
 
 # 跨域配置
 cros:
