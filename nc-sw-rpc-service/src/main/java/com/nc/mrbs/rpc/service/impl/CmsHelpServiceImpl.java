@@ -17,5 +17,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
  */
 @Service
 public class CmsHelpServiceImpl extends ServiceImpl<CmsHelpMapper, CmsHelp> implements CmsHelpService {
-
+    public static void main(String[] args) {
+        System.out.println("erferer");
+    }
 }
