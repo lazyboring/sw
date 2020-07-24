@@ -19,7 +19,5 @@ import springfox.documentation.spi.DocumentationType;
 @Controller
 @RequestMapping("/cmsHelp")
 public class CmsHelpController {
- public static void main(String[] args) {
 
- }
 }
