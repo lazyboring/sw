@@ -4,6 +4,9 @@ package com.nc.mrbs.web.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
 
 /**
  * <p>
@@ -16,5 +19,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 @RequestMapping("/cmsHelp")
 public class CmsHelpController {
+ public static void main(String[] args) {
 
+ }
 }
